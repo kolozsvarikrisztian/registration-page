@@ -51,3 +51,13 @@ function ell2() {
         }
     }
 }
+
+function mezottorol(){
+    mezok = document.getElementsByTagName("input");
+    for (let index = 0; index < mezok.length; index++) {
+        if (mezok[index].type == "radio" || mezok[index].type == "checkbox"){ 
+            mezok[index].checked = false;
+        }
+        mezok[index]. value = "";
+    }
+}
