@@ -19,11 +19,11 @@
                 </tr>
                 <tr>
                     <td><label for="psw">leendő jelszavad:</label></td>
-                    <td><input type="password" id="psw" name="psw" minlength="8" maxlength="16" onblur="ell()"></td>
+                    <td><input type="password" id="psw" name="psw" minlength="8" maxlength="16" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$_])[A-Za-z\d@$_]{8,16}$" required></td>
                 </tr>
                 <tr>
                     <td><label for="psw2">jelszavad még egyszer:</label></td>
-                    <td><input type="password" id="psw2" name="psw2" minlength="8" maxlength="16"></td>
+                    <td><input type="password" id="psw2" name="psw2" minlength="8" maxlength="16" onblur="ell2()" required></td>
                 </tr>
                 <tr>
                     <td><label for="szulev">születési éved:</label></td>
